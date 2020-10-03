@@ -1,11 +1,29 @@
-h1 {
-    color: blue;
-    border: solid 2px black;
-    width: 400px;
+.header {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #222;
+    border: solid 2px red;
 }
 
-.love {
-    color: red;
-    border: solid 2px black;
-    width: 400px; 
+.anakin {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
+
+.container {
+    /* margin: auto; */
+    position: relative;
+    color: yellow;
+    border: solid 1px blue;
+    text-align: center;
+    width: 80%;
+    }
+
+.class {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}    
+
