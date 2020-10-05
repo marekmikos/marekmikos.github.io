@@ -1,24 +1,18 @@
-// Replicate the basic HTML above (2 different headings and a button)
-// Create an EventListener for clicking on the button, increase the value of the second heading (currently 0)
-// (Optional) Create a working decreasing button as well
-// (Hint) Any content of an HTML element is going to be a string
-// (Hint) You can store the number in a variable
+// Replicate this basic HTML file above
+// When clicking on the Add todo button add the content of the input field to the list
+// (Optional) Clicking on a list item should make the text line-through
 
-// on button click increase
-$('.increase').click(() => {
-    // read value of h3
-    let string = $('h3').text();
-    
-    // increase number by 1 anf change value of h3
-    $('h3').html(++string);
+// when clicked, read content of the input field and append it as <li> do <ul>
+
+// click
+$('button').click(() => {
+
+    // read value and load it to variable string
+    let string = $('input').val();
+
+    // append value in variable string as <li> into <ul>
+    $('ul').append(`<li>${string}</li>`);
+
+    // and clear line in text input
+    $('input').val('');
 });
-
-// on button click decrease
-$('.decrease').click(() => {
-    // read value of h3
-    let string = $('h3').text();
-    
-    // increase number by 1 anf change value of h3
-    $('h3').html(--string);
-});
-
